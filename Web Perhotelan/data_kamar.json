@@ -1,0 +1,25 @@
+[
+    {
+        "id": "room_6adee4a3e09340.76966318",
+        "nomor_kamar": "101",
+        "tipe_kamar": "VIP",
+        "fasilitas": [
+            "AC"
+        ],
+        "harga_kamar": "1000000"
+    },
+    {
+        "id": "room_6adee5dfa55424.93881406",
+        "nomor_kamar": "102",
+        "tipe_kamar": "Reguler",
+        "fasilitas": [
+            "AC",
+            "Free WiFi",
+            "TV Kabel",
+            "Mini Bar",
+            "Bathtub",
+            "Breakfast"
+        ],
+        "harga_kamar": "800.000"
+    }
+]

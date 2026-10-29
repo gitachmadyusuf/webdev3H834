@@ -1,0 +1,58 @@
+<table border="1" width="80%" cellspacing="0">
+    <thead>
+        <th colspan="3">Data Mahasiswa</th>
+        <tr bgcolor="skyblue">
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Jurusan</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>834</td>
+            <td>Ahmad</td>
+            <td rowspan="2">TI</td>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>Tia</td>
+        </tr>
+    </tbody>
+    <thead>
+        <th colspan="3">Sub</th>
+    </thead>
+    <tr>
+        <th>Kelompok</th>
+        <th>NIM</th>
+        <th>Nama</th>
+    </tr>
+    <tbody>
+        <tr>
+            <td rowspan="2">2</td>
+            <td>1</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>B</td>
+        </tr>
+    </tbody>
+</table>
+<form action="kirim.php" method="POST">
+    NIM<input type="number" name="nim834" id=""><br>
+    Nama<input type="text" name="nama834" id=""><br>
+    Email<input type="email" name="email834"><br>
+    <label for="pilihukm">Pilih UKM</label>
+    <select id="pilihukm" name="pilih_ukm834">
+        <option value="Cyber">Cyber</option>
+        <option value="Koma">Koma</option>
+        <option value="Badminton">Badminton</option>
+    </select><br>
+    <label for="jeniskelamin">Jenis Kelamin</label>
+    <select id="jeniskelamin" name="jeniskelamin834">
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+        <option value="Prever not to say">Rahasia </option>
+    </select><br>
+    <input type="submit" value="Simpan">
+</form>

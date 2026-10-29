@@ -1,0 +1,28 @@
+#register{
+    background-color: greenyellow;
+    color: red;
+}
+
+.btn{
+    padding: 5px;
+    border: 2px;
+    background-color: khaki;
+    border-radius: 10px;
+}
+.btn-red{
+    background-color: rgb(24, 97, 232);
+}
+
+body {
+    padding: 5px;
+    border: 2px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+a{
+    padding: 5px;
+    border: 2px;
+    background-color: khaki;
+    border-radius: 10px;
+}
