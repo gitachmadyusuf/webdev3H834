@@ -17,6 +17,7 @@
     <a href="css.php?hal=home834">Home</a>
     <a href="css.php?hal=profile834">Profile</a>
     <a href="css.php?hal=kontak834">Kontak</a>
+    <a href="css.php?hal=beranda">Beranda</a>
 
     <?php
     if($_GET) {
@@ -26,6 +27,8 @@
             include "profile.php";
         } else if($_GET["hal"]=="kontak834") {
             include "kontak.php";
+        } else if($_GET["hal"]=="beranda834") {
+            include "beranda.php";
         } else {
             echo "Halaman tidak ditemukan.";
         }
