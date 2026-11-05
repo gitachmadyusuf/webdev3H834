@@ -40,8 +40,10 @@
     $hargakamar   = (int)$_POST["harga_kamar_834_kelompok2"];
     $bayar        = $jumlahkamar * $hargakamar;
 ?>
+
+    <!--Struk Cetak Transaksi-->
     <div class="card-kelompok2" id="data-transaksi" style="margin-top: 20px;">
-        <div class="fieldset-kelompok2">
+        <div class="fieldset-kelompok2"> <!--Styling garis putus-putus-->
             <div>
                 <h3 class="h3-kelompok2">Struk Bukti Reservasi</h3>
             </div>
@@ -57,6 +59,7 @@
     </div>
 <?php endif; ?>
 
+<!--Panduan pemakaian Aplikasi-->
 <div class="card-kelompok2" id="bantuan-transaksi" style="margin-top: 20px;">
     <h3 class="h3-kelompok2">Bantuan Kalkulasi Transaksi</h3>
     <p>Sistem otomatis akan mengalikan jumlah pesanan kamar dengan harga satuan tarif per malam untuk memunculkan ringkasan total nilai tagihan akhir pada nota bukti transaksi di atas.</p>

@@ -234,3 +234,63 @@ body.body-kelompok2 {
     font-size: 14px;
     line-height: 1.6;
 }
+
+/* =========================================================================
+   STYLE UNTUK DAFTAR PAKET KAMAR (FLEXBOX GRID)
+   ========================================================================= */
+
+/* 1. CONTAINER UTAMA */
+.room-container-kelompok2 {
+    display: flex;          /* Mengaktifkan mode flexbox */
+    flex-wrap: wrap;        /* Jika layar sempit, kartu otomatis turun ke bawah */
+    gap: 20px;              /* Jarak antar kartu (kanan-kiri & atas-bawah) */
+    margin-top: 30px;
+}
+
+/* 2. KARTU INDIVIDUAL */
+.room-card-kelompok2 {
+    /* Lebar kartu: 100% dibagi 3 (33.333%), dikurangi jarak gap 20px */
+    flex: 1 1 calc(33.333% - 20px); 
+    min-width: 250px;       /* Batas lebar minimal agar tidak hancur di HP */
+    background-color: #fff;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;     /* Membuat ujung kartu agak melengkung */
+    overflow: hidden;       /* Mencegah gambar keluar dari sudut melengkung */
+    display: flex;
+    flex-direction: column; /* Menyusun gambar dan teks dari atas ke bawah */
+}
+
+/* 3. GAMBAR KAMAR (UKURAN STABIL & TIDAK GEPENG) */
+.room-img-kelompok2 {
+    width: 100%;                /* Lebar memenuhi seluruh kartu */
+    height: 200px;              /* KUNCI STABIL: Patok tinggi gambar sama rata di semua kartu */
+    object-fit: cover;          /* KUNCI PROPORSIONAL: Memotong gambar secara pas tanpa membuat gambar gepeng */
+    object-position: center;     /* Memastikan titik tengah gambar yang diutamakan */
+    flex-shrink: 0;             /* Mencegah gambar mengkerut jika konten teks di bawahnya sangat panjang */
+}
+
+/* 4. AREA TEKS & INFO */
+.room-info-kelompok2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;           /* Membuat area teks mengisi ruang kosong */
+}
+
+.room-price-kelompok2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ef4444;         /* Warna merah untuk menonjolkan harga */
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #cbd5e1;
+    padding-bottom: 10px;
+}
+
+.room-facilities-kelompok2 {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #475569;
+    flex-grow: 1;           /* Mendorong tombol "Pesan Sekarang" agar selalu di paling bawah */
+}

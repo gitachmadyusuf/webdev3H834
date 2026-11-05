@@ -44,6 +44,55 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
                 </div>
             </div>
 
+            <div class="room-container-kelompok2" id="" style="margin-top: 40px;">
+
+                <!-- Kartu Kamar 1 -->
+                 <div class="room-card-kelompok2">
+                    <img src="img/image1.jpg" class="room-img-kelompok2" alt="Kamar Reguler">
+                    <div class="room-info-kelompok2">
+                        <h3>Reguler Room</h3>
+                        <p class="">Rp 250.000 / malam</p>
+                        <ul>
+                            <li>AC & Free Wi-Fi</li>
+                            <li>TV Kabel</li>
+                            <li>Kamar Mandi Dalam</li>
+                        </ul>
+                        <button class="btn-submit-kelompok2">Pesan Sekarang!</button>
+                    </div>
+                 </div>
+                
+                 <!-- Kartu Kamar 2 -->
+                 <div class="room-card-kelompok2">
+                    <img src="img/image2.jpg" class="room-img-kelompok2" alt="Kamar VIP">
+                    <div class="room-info-kelompok2">
+                        <h3>VIP Room</h3>
+                        <p class="">Rp 500.000 / malam</p>
+                        <ul>
+                            <li>AC, Free Wi-Fi, TV Kabel</li>
+                            <li>Mini Bar & Bathub</li>
+                            <li>Breakfast 2 orang</li>
+                        </ul>
+                        <button class="btn-submit-kelompok2">Pesan Sekarang!</button>
+                    </div>
+                 </div>
+
+                 <!-- Kartu Kamar 3 -->
+                 <div class="room-card-kelompok2">
+                    <img src="img/image3.jpg" class="room-img-kelompok2" alt="Kamar Keluarga">
+                    <div class="room-info-kelompok2">
+                        <h3>Family Room</h3>
+                        <p class="">Rp 750.000 / malam</p>
+                        <ul>
+                            <li>2 Bed Besar</li>
+                            <li>Ruang Keluarga</li>
+                            <li>Pemandangan Kota</li>
+                        </ul>
+                        <button class="btn-submit-kelompok2">Pesan Sekarang!</button>
+                    </div>
+                 </div>
+
+            </div>
+
             <div class="card-kelompok2" id="petunjuk-penggunaan" style="margin-top: 40px;">
                 <h3 class="h3-kelompok2">Petunjuk Penggunaan Aplikasi</h3>
                 <ol class="list-bantuan-kelompok2">
