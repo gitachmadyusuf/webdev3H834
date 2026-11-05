@@ -1,0 +1,236 @@
+/* =========================================================================
+   STYLE TATA LETAK KELOMPOK 2 (MURNI LAYOUT, INPUT STANDARD & TANPA ANIMASI)
+   ========================================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body.body-kelompok2 {
+    display: flex;
+    background-color: #f4f6f9;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* TATA LETAK SIDEBAR NAVIGASI (KIRI) */
+.sidebar-kelompok2 {
+    width: 260px;
+    background-color: #1e293b;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.title-sidebar-kelompok2 {
+    padding: 0 20px 20px 20px;
+    font-size: 22px;
+    border-bottom: 1px solid #334155;
+    text-align: center;
+    color: #38bdf8;
+}
+
+.menu-kelompok2 {
+    list-style: none;
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+.menu-kelompok2 li a {
+    display: block;
+    padding: 12px 20px;
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.menu-kelompok2 li a:hover {
+    background-color: #334155;
+    color: #fff;
+}
+
+.menu-kelompok2 li a.active-kelompok2 {
+    background-color: #0284c7;
+    color: #fff;
+    font-weight: bold;
+    border-left: 5px solid #38bdf8;
+}
+
+.footer-sidebar-kelompok2 {
+    padding: 10px 20px;
+    font-size: 11px;
+    color: #64748b;
+    text-align: center;
+    border-top: 1px solid #334155;
+}
+
+/* TATA LETAK KONTEN UTAMA (KANAN) */
+.content-kelompok2 {
+    margin-left: 260px;
+    padding: 40px;
+    width: calc(100% - 260px);
+}
+
+.card-kelompok2 {
+    background-color: #fff;
+    padding: 30px;
+    max-width: 750px;
+    margin: 0 auto;
+    border: 1px solid #cbd5e1;
+}
+
+/* STRUKTUR TYPOGRAPHY & LINK */
+.h1-kelompok2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.h2-kelompok2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #0f172a;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+.h3-kelompok2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #0369a1;
+}
+
+.landing-links-kelompok2 {
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.btn-link-kelompok2 {
+    color: #0284c7;
+}
+
+.back-top-kelompok2 {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #ef4444;
+}
+
+/* TATA LETAK ELEMEN FORM (STANDARD INPUT & SELECTION) */
+.form-kelompok2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group-kelompok2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group-kelompok2 label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #475569;
+}
+
+/* Mengatur ukuran lebar penuh untuk tata letak tanpa merubah bentuk visual aslinya */
+.form-group-kelompok2 input[type="text"],
+.form-group-kelompok2 input[type="number"],
+.form-group-kelompok2 input[type="date"],
+.form-group-kelompok2 select {
+    width: 100%;
+    font-size: 14px;
+    padding: 5px;
+    /* Spacing internal standard agar teks tidak menempel */
+}
+
+/* TATA LETAK CHECKBOX GROUP */
+.checkbox-group-kelompok2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.checkbox-item-kelompok2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-item-kelompok2 input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.checkbox-item-kelompok2 label {
+    font-weight: normal;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* TATA LETAK TOMBOL SUBMIT STANDARD */
+.btn-submit-kelompok2 {
+    align-self: flex-start;
+    padding: 6px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* TATA LETAK STRUK & TABEL OUTPUT DATA */
+.table-output-kelompok2 {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.table-output-kelompok2 th,
+.table-output-kelompok2 td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #cbd5e1;
+    font-size: 14px;
+}
+
+.table-output-kelompok2 th {
+    background-color: #f8fafc;
+    width: 35%;
+    color: #475569;
+}
+
+.fieldset-kelompok2 {
+    border: 1px dashed #cbd5e1;
+    padding: 20px;
+}
+
+.fieldset-kelompok2 p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.total-bayar-kelompok2 {
+    font-size: 18px;
+    margin-top: 15px;
+    border-top: 1px dashed #cbd5e1;
+    padding-top: 10px;
+}
+
+.list-bantuan-kelompok2 {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.list-bantuan-kelompok2 li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+}
