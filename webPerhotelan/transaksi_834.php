@@ -1,9 +1,9 @@
 <div class="card-kelompok2" id="top-transaksi">
     <h2 class="h2-kelompok2">Reservasi Kamar Hotel (NIM 834)</h2>
     <div class="landing-links-kelompok2">
-        <?php if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['pemesan_834_kelompok2'])): ?>
+        <?php if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['pemesan_834_kelompok2'])) { ?>
             <a href="#data-transaksi" class="btn-link-kelompok2">Melihat Struk Pembayaran</a> |
-        <?php endif; ?>
+        <?php } ?>
         <a href="#bantuan-transaksi" class="btn-link-kelompok2">Bantuan Form</a>
     </div>
 
@@ -33,7 +33,7 @@
 </div>
 
 <!-- OUTPUT PEMROSESAN STRUK -->
-<?php if ($_SERVER['REQUEST_METHOD'] === 'POST'):
+<?php if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $namapemesan  = $_POST["pemesan_834_kelompok2"];
     $tanggalpesan = $_POST["tanggal_pesan_834_kelompok2"];
     $jumlahkamar  = (int)$_POST["jumlah_kamar_834_kelompok2"];
@@ -57,7 +57,7 @@
         <br>
         <a href="#top-transaksi" class="back-top-kelompok2">↑ Kembali ke Atas Form</a>
     </div>
-<?php endif; ?>
+<?php } ?>
 
 <!--Panduan pemakaian Aplikasi-->
 <div class="card-kelompok2" id="bantuan-transaksi" style="margin-top: 20px;">
